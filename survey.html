@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Survey Form</title>
+  <link href="survey.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Restaurant Survey Form</h1>
+      <p id="description" class="description text-center">This survey asks for your opinion(s) to help us improve our restaurant in order to provide the best services to our customers. We really appreciate you for taking the time to complete this survey.</p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label id="phone-number" for="phone">Phone Number<span class="clue">(optional)</span></label>
+        <input type="number" name="phone-number" id="phone" class="form-control" placeholder="Enter your phone number">
+      </div>
+
+      <div class="form-group">
+        <p>Which option best describes you?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="student">Student</option>
+          <option value="parent">Parent</option>
+          <option value="job">Full Time Job</option>
+          <option value="traveler">Traveler</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">How would you rate our restaurant?<span class="clue">(from 1 to 10 scale)</span></label>
+        <input type="number" name="number" id="number" min="1" max="10" class="form-control" placeholder="Rate here">
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend our restaurant to a friend?</p>
+        <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely</label>
+        <label><input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+      </div>
+
+      <div class="form-group">
+        <p>What is your most favorite thing at our restaurant?</p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="food">Food</option>
+          <option value="drink">Drink</option>
+          <option value="dessert">Dessert</option>
+          <option value="Staff">Staff</option>
+          <option value="atmostphere">Restaurant Atmosphere</option>
+          <option value="design">Restaurant Design</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
+        <label><input name="prefer" value="food" type="checkbox" class="input-checkbox">Food</label>
+        <label><input name="prefer" value="drink" type="checkbox" class="input-checkbox">Drink</label>
+        <label><input name="prefer" value="customer-service" type="checkbox" class="input-checkbox">Customer Service</label>
+        <label><input name="prefer" value="price" type="checkbox" class="input-checkbox">Price</label>
+        <label><input name="prefer" value="space" type="checkbox" class="input-checkbox">Space (too small, narrow, etc.)</label>
+        <label><input name="prefer" value="hygiene" type="checkbox" class="input-checkbox">Hygiene (dirty, stains,...)</label>
+        <label><input name="prefer" value="waiting-time" type="checkbox" class="input-checkbox">Waiting time</label>
+      </div>
+
+      <div class="form-group">
+        <p>Please give us more details about your option(s) above:</p>
+        <textarea id="explain" class="input-textarea" name="explain" placeholder="Explain here..."></textarea> 
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <p id="thank-you">Thank you for taking this survery!</p>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+
+      <p class="link">Go to <a href="index.html">My Tribute Page</a>
+        <br>Go to <a href="personal_portfolio.html">My Personal Portfolio</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>

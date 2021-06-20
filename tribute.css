@@ -1,0 +1,114 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Georgia;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #333;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: lightsalmon;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+a {
+  color: lightsalmon;
+}
+#main {
+  margin: 30px 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #eee;
+}
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 70%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+#img-div {
+  background: rgb(255, 201, 179);
+  padding: 10px;
+  margin: 0;
+}
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+ul {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 2;
+}
+#biography {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 2;
+}
+h4 {
+  font-size: 1.8rem;
+}
+li {
+  margin: 14px 0;
+}
+blockquote {
+  font-style: italic;
+  max-width: 545px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+#image2 {
+  max-width: 100%;
+}
+#footer {
+  color:rgb(255, 201, 179);
+  margin: 0;
+}
+#link {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+#intro {
+  font-style: italic;
+  margin: 10px auto 25px auto;
+}
+#source {
+  font-style: italic;
+  margin: -30px auto 100px auto;
+  text-align: center;
+}
+
